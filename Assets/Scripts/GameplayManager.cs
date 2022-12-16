@@ -80,7 +80,7 @@ public class GameplayManager : MonoBehaviour
             yield return new WaitForSeconds(_bubbleTimer);
             bubble.gameObject.SetActive(false);
             if (holaCounts == 2)
-                yield return new WaitForSeconds(_bubbleTimer);
+                yield return new WaitForSeconds(.5f);
             else
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
